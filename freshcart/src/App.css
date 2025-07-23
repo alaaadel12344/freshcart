@@ -1,0 +1,213 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+
+
+
+.nav-link {
+  color: #6c757d !important;
+  transition: all 0.6s ease-in-out;
+}
+
+.nav-link:hover {
+  color: #000 !important;
+  
+}
+
+.nav-link.active {
+  color: #000000 !important;
+  font-weight: bold;
+  transform: scale(1.08); 
+}
+
+
+
+.product-card {
+  transition: all 0.3s ease-in-out;
+  position: relative;
+  background-color: #fff;
+}
+
+.product-card:hover {
+  box-shadow: 0 4px 12px rgba(25, 135, 84, 0.2);
+  border-color: #198754;
+}
+
+
+.product-image {
+  height: 250px;
+  object-fit: contain;
+  padding: 5px;
+  background-color: #f8f9fa;
+  transition: transform 0.3s ease;
+}
+
+.product-card:hover .product-image {
+  transform: scale(1.05);
+}
+
+
+.add-btn {
+  opacity: 0;
+  transform: translateY(10px);
+  transition: all 0.3s ease-in-out;
+  z-index: 2;
+  position: absolute;
+  left: 0;
+  bottom: 35px;
+}
+
+
+.product-card:hover .add-btn {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+
+.product-img {
+  height: 250px;
+  object-fit: contain;
+  padding: 10px;
+}
+
+
+.product-card {
+  transition: all 0.3s ease-in-out;
+  position: relative;
+}
+
+
+.product-card .add-btn {
+  position: absolute;
+  bottom: -100%;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.product-card:hover .add-btn {
+  bottom: 0;
+  opacity: 1;
+}
+
+.wishlist-icon {
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+
+.navbar-nav .nav-link {
+  transition: color 0.3s;
+}
+.navbar-nav .nav-link:hover {
+  color: black !important;
+}
+
+
+
+
+
+.category-slider {
+  display: flex;
+  overflow-x: auto;
+  gap: 10px;
+  padding-bottom: 10px;
+  scrollbar-width: none; 
+}
+
+.category-slider::-webkit-scrollbar {
+  display: none; 
+}
+
+
+.category-slider:active {
+  cursor: grabbing;
+}
+
+
+.cat-card {
+  flex: 0 0 auto;
+  width: 160px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background-color: white;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s;
+}
+.cat-card:hover {
+  transform: scale(1.03);
+}
+
+.cat-card img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 8px;
+}
+
+
+
+
+
+/* ممكن تضيف ده في App.css */
+.card img {
+  transition: 0.3s ease-in-out;
+}
+
+.card:hover img {
+  transform: scale(1.05);
+}
+
+
+
+
+.brand-card {
+  transition: box-shadow 0.3s ease, transform 0.2s ease;
+}
+
+
